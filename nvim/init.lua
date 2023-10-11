@@ -17,3 +17,5 @@ end
 bootstrap_pckr()
 
 require('plugins');
+
+require('coc');
