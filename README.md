@@ -17,27 +17,22 @@ brew reinstall neovim
 
 ```shell
 
-# opt ディレクトリにpacker.nvimをクローン
-git clone https://github.com/wbthomason/packer.nvim \
-  ~/.local/share/nvim/site/pack/packer/opt/packer.nvim
-
 # 必要なフォルダの作成
 mkdir ~/.config/
 cd ~/.config/
 
 # Gitより設定をクローンする
-git clone https://github.com/Ue555/nvim.git
+git clone git@github.com:Ueki555/dotfiles.git
+git clone https://github.com/Ueki555/dotfiles.git
 
 # プラグインをインストールする
-:PackerInstall
+:Pckr install
 # 追加されたプラグインをインストールし、既存のものは更新する
-:PackerUpdate
+:Pckr update [plugin]
 # 必要なくなったプラグインを削除する
-:PackerClean
-# 設定ファイルをコンパイルする
-:PackerCompile
+:Pckr clean
 # インストールしたリストを見せる
-:PackerStatus
+:Pckr status
 ```
 
 ### 3.prettier をプロジェクトにインストールする
