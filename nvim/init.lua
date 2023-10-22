@@ -19,3 +19,5 @@ bootstrap_pckr()
 require('plugins');
 
 require('coc');
+
+require('base');
